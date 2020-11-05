@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --navabar-height:59px
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    font-family: 'Itim', cursive;
+    position: sticky;
+    top: 0px;
+}
+#logo{
+   margin: 10px 10px; 
+   
+}
+#logo img{
+margin: 3px 6px;
+height: 50px;
+   width: 50x;
+}
+/* Part for navigation bar */
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+.navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    /* Inorder to remove the underline */
+    text-decoration: none;
+    color: white;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+.navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home CSS */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: url('/Images/british.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+    
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Itim', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Itim', cursive;
+}
+
+.h-primary{
+    font-size: 4.0rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.servicessection{
+    text-align: center ;
+}
+
+
+/* AboutUs CSS */
+
+#aboutus{
+    display: flex;
+    margin: 34px;
+}
+#aboutus .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+}
+#aboutus .box img{
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    display: block;
+}
+.h1center{
+    height: 38px;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    font-family: 'Itim', cursive;
+
+}
+.h2center{
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.3rem;
+    font-family: 'Itim', cursive;
+}
+
+/* Our Shops Section */
+#client{
+    
+    position: relative;
+       
+}
+.clientitem{
+    padding:54px ;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+   height:100px ;
+}
+#client::before{
+    content: "";
+    position: absolute;
+    background: url('/Images/cutlet.jpg') no-repeat center center/cover;
+    width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.3;
+
+}
+
+/* Contact CSS */
+#contact{
+position: relative;
+
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('/Images/cutlet.jpg') no-repeat center center/cover;
+}
+footer{
+    background: black;
+    color: white;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+#contactcontainer{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding-bottom: 34px;
+    flex-wrap: wrap;
+     
+}
+#contactcontainer input, 
+#contactcontainer textarea{
+    width: 500px;
+    padding: 1.25rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 15px;
+
+}
+#contactcontainer form{
+    width: 100%;
+    position: relative;
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#contactcontainer form label{
+    font-size: 1.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Itim', cursive;
+    color: white;
+}
+.h1center1{
+    height: 38px;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    font-family: 'Itim', cursive;
+    padding: 25px;
+    position: relative;
+    align-items: center;
+
+}
